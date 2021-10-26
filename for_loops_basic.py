@@ -11,6 +11,14 @@ def print_desc(description) :
     print(description)
     print()
 
+def flexible_counter(low_num, high_num, mult):
+    output = ""
+    for idx in range (low_num, high_num + 1):
+        if idx % mult == 0:
+            output += f"{idx} "
+    return output
+
+
 #   //// MAIN EXECUTION SECTION //////////////////////////////////////////////
 
 # ********************************************************
@@ -52,3 +60,17 @@ sum = 0
 for idx in range (1, 500001, 2):
     sum += idx
 print (f"the sum is {sum}")
+
+# ********************************************************
+print_desc("5. Countdown by fours - Print positive numbers starting at 2018, counting downj by fours")
+
+output = ""
+for idx in range(2018,0,-4):
+    output += f"{idx} "
+else:
+    print(output)
+
+# ********************************************************
+print_desc("6. Flexible Counter")
+
+print("if lowNum = 3, and highNum 9, output is " + flexible_counter(2,9,3))
