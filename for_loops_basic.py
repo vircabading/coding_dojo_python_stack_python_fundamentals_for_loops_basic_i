@@ -45,3 +45,10 @@ for idx in range (1,101):
 else:
     print(output)
 
+# ********************************************************
+print_desc("4. Whoa. That Sucker's Huge - add odd integers from 0 to 500,000 and print the final sum")
+
+sum = 0
+for idx in range (1, 500001, 2):
+    sum += idx
+print (f"the sum is {sum}")
