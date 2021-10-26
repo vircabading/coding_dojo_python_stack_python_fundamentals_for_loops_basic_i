@@ -6,6 +6,7 @@
 #   //// FUNCTIONS ///////////////////////////////////////////////////////////
 
 def print_desc(description) :
+    print()
     print("////////////////////////////////////////////////////////////////////////////")
     print(description)
     print()
@@ -21,3 +22,11 @@ for idx in range(151):
 else:
     print(output)
 
+# ********************************************************
+print_desc("2. Multiples of five - Print all multiples of 5 from 5 to 1000")
+
+output = ""
+for idx in range(5,1001,5):
+    output += f"{idx} "
+else:
+    print(output)
