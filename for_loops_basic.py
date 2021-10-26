@@ -30,3 +30,18 @@ for idx in range(5,1001,5):
     output += f"{idx} "
 else:
     print(output)
+
+# ********************************************************
+print_desc("3.Counting the Dojo Way - Print integers 1 to 100.  If divisible by 5 print 'Coding' instead.  If divisible by 10 print 'Coding Dojo'")
+
+output = ""
+for idx in range (1,101):
+    if idx % 10 == 0:
+        output += "Coding Dojo "
+    elif idx % 5 == 0:
+        output += "Coding "
+    else:
+        output += f"{idx} "
+else:
+    print(output)
+
